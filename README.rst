@@ -3,6 +3,7 @@ About
 =====
 
 .. image:: https://travis-ci.org/povilasb/pymonitoring.svg
+.. image:: https://codeclimate.com/github/povilasb/pymonitoring/badges/issue_count.svg
 
 `pymonitoring` is a Python package that allows to easily create HTTP monitoring
 interfaces for your python services.
