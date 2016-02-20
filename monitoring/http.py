@@ -10,6 +10,7 @@ from threading import Thread
 # RequestHandler.
 monitoring_info = None
 
+
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     """HTTP request handler.
     """
@@ -27,6 +28,7 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         self.end_headers()
 
         self.wfile.write(monitoring_info.to_json())
+
 
 class Server(object):
     """HTTP server to get monitoring info.
