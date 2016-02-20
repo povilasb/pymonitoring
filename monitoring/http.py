@@ -6,7 +6,8 @@ import SocketServer
 from threading import Thread
 
 # Nasty global variable.
-# Hope this is temporarily until I find out how to inject it into RequestHandler.
+# Hope this is temporarily until I find out how to inject it into
+# RequestHandler.
 monitoring_info = None
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
@@ -32,9 +33,9 @@ class Server(object):
     """
     def __init__(self, port, service_info):
         """
-        This constructor has a side effect: it sets global monitoring information
-        object. This object is used in HTTP RequestHandler.
-        This is a hack and must be solved. For know, I don't know how.
+        This constructor has a side effect: it sets global monitoring
+        information object. This object is used in HTTP RequestHandler.  This is
+        a hack and must be solved. For know, I don't know how.
 
         Args:
             port (int): HTTP server port.
